@@ -9,7 +9,7 @@ app.use(express.json());
 
 
 app.use('/users', dataRoutes);
-app.use('/auth', authRoutes)
+app.use('/', authRoutes)
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
